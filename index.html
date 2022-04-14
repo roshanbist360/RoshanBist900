@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Portfolio</title>
+    
+    <!-- Required meta tags -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!--   CSS file included -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+  
+    <!-- cdn for fontawesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+      <section>
+      	<div class="main">
+      		<div class="header">
+      			<div class="portfolio_logo">
+                    <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-portfolio-web-development-flaticons-flat-flat-icons.png"/>
+      				<span>Portfolio</span>
+      			</div>
+
+      			<div class="menus">
+      				<a href="">Home</a>
+      			    <a href="">About</a>
+                    <a href="">Projects</a>
+                    <a href="">Contact</a>
+      			</div>
+               
+               <!-- mobile responsive menu -->
+               <div class="menuBar" onclick="menuControl();">
+                    <div class="bar1" id="bar1"></div> <div class="bar2" id="bar2"></div> 
+                    <div class="bar3" id="bar3"></div>
+               </div>
+
+                <div id="mobileMenu">
+                    <div class="menus" id="mobMenuList">
+      			    	<a href="">Home</a>
+      			        <a href="">About</a>
+                        <a href="">Projects</a>
+                        <a href="">Contact</a>
+      			    </div>
+      		    </div>
+      		</div><!-- end of mobile responsive menu -->
+
+      		<div class="myInfo">
+      			<div class="myInfoText">
+      				<div class="texts">
+      					<span class="text1">Hello I am</span>
+      					<span class="text2">Roshan Bist</span>
+      					<span class="text3">A Frontend <span class="text31">Web Developer</span></span> 
+      				</div>
+
+      				<div  id="cvButton"><a href="">Download CV</a></div>
+      			</div>
+
+      			<div class="myImage">
+      				 <img src="roshan.png" alt="My_Image">
+      			</div>
+      		</div>
+
+      		<div class="links">
+      			 <div class="myIcon"><a href="https://github.com/roshanbist360/" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+      			 <div class="myIcon"><a href="https://twitter.com/RoshanBist900" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+      			 <div class="myIcon"><a href="https://www.linkedin.com/in/roshan-bist-027b49177" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+      			 <div class="myIcon"><a href="https://www.facebook.com/roshanbist.roshanbist.3" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+      		</div>
+      	</div>
+      </section>
+      
+      <script type="text/javascript">
+            // JS DOM for well working of sidebar menu
+            var x=0;   //denotes menu is hidden
+            function menuControl(){
+                switch(x){
+                    case 0:
+                        document.getElementById('mobMenuList').style.opacity="1";
+                        document.getElementById('mobMenuList').style.height="220px";
+                        document.getElementById('mobMenuList').style.pointerEvents = "auto";
+                        document.getElementById('bar1').style.transform = "rotate(45deg)";
+                        document.getElementById('bar2').style.transform = "rotate(135deg)";
+                        document.getElementById('bar1').style.marginTop = "8px";
+                        document.getElementById('bar2').style.marginTop = "-2px";
+                        document.getElementById('bar3').style.display = "none";
+                        x=1;  //denotes menu is visible
+                        break;
+
+                    case 1:
+                        document.getElementById('mobMenuList').style.opacity="0";
+                        document.getElementById('mobMenuList').style.height="0px";
+                        document.getElementById('mobMenuList').style.pointerEvents = "none";
+                        document.getElementById('bar1').style.transform = "rotate(0deg)";
+                        document.getElementById('bar2').style.transform = "rotate(0deg)";
+                        document.getElementById('bar1').style.marginTop = "0px";
+                        document.getElementById('bar2').style.marginTop = "6px";
+                        document.getElementById('bar3').style.display = "block";
+                        x=0;  //denotes menu is hidden
+                        break;
+
+                    default:
+                        document.getElementById('mobMenuList').innerHTML="Something went wrong";
+                        break;
+                }
+            };
+      </script>
+</body>
+</html>

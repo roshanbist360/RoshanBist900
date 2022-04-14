@@ -1,0 +1,420 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+:root{
+   font-size: 16px;
+   --bdr: 0px solid yellow; 
+}
+
+body{
+   font-size: 16px;
+   color: #fff;
+   background: #000;
+}
+
+section{
+	height: 100vh;
+	width: 100vw;
+	background-image: url("bg.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: var(--bdr);
+}
+
+section .main{
+	height: 100vh;
+	background-color: rgba(0,0,0,0.7);
+	padding-left: 40px;
+	padding-right: 40px;
+	border: var(--bdr);
+}
+
+section .main .header{
+	height: 100px;
+	width: 100%;
+	background: transparent;
+	display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: var(--bdr);
+    position: relative;
+}
+
+section .main .header .portfolio_logo{
+	height: 100%;
+	max-width: 12.5rem;
+	font-size: 2.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: fantasy;
+    border: var(--bdr);
+}
+
+section .main .header .menus{
+	position: absolute;
+	top: 30px;
+    right: 0px;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    font-family: 'Montserrat', sans-serif;
+    border: var(--bdr);
+ }
+
+section .main .header .menus a{
+	color: #ffffff;
+	margin: 10px 0px 0px 4rem;
+    padding: 0.25rem 0.25rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s linear;
+    position: relative;
+}
+
+section .main .header .menus a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	left: 0;
+	bottom: -2px;
+	background: #ff2890;
+	transform: scale(0,1);
+	/*transform-origin: 0% 100%;*/ 
+	/* use transform only if animate from center and use transform and transform-origin both
+	 if need to animate from left to right*/
+	transition: transform 0.3s ease;
+}
+
+section .main .header .menus a:hover::after{
+	transform: scale(1,1);
+}
+
+/*mobile responsive menu*/
+section .main .header .menuBar{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    padding: 8px 4px;
+    display: none;
+}
+
+section .main .header .menuBar .bar1, .bar2, .bar3{
+	text-align: center;
+	height: 2px;
+    width: 25px;
+    background: #ffffff;
+    transition: all 0.3s;
+}
+
+section .main .header .menuBar #bar2{
+    margin-top: 6px;
+}
+
+section .main .header .menuBar #bar3{
+    margin-top: 6px;
+}
+
+#mobileMenu{
+	position:relative;
+	margin-left: auto;
+	z-index: 10;
+}
+
+#mobMenuList{
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	opacity: 0;
+	height: 0px;
+	position: absolute;
+	top: 30px;
+	right: 0px;
+	padding:10px 20px;
+	background: #444;
+	box-shadow: 1px 1px 5px #000,-1px -1px 2px #fff;
+	transition: all 0.3s;
+ }
+
+#mobMenuList a{
+	width: 100px;
+	background: transparent;
+	border-style: none;
+    margin: 10px 0px;
+}
+/*mobile responsive menu ends */
+
+section .main .myInfo{
+	border: 1px solid #fff;
+	height: auto;
+	width:100%;
+	display: inline-flex;
+	justify-content: space-around;
+	border: var(--bdr);
+}
+
+section .main .myInfo .myInfoText{
+	margin-top: 6.25rem;
+	color: #fff;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 3rem;
+	border: var(--bdr);
+}
+
+section .main .myInfo .myInfoText .texts{
+    display: flex;
+    flex-direction: column;
+}
+
+section .main .myInfo .myInfoText .text1{
+    font-size: 2.5rem;
+}
+
+section .main .myInfo .myInfoText .text2{
+    font-size: 3.5rem;
+    color: #ff2890;
+    font-weight: 600;
+}
+
+section .main .myInfo .myInfoText .text3{
+    font-size: 1.5rem;
+}
+
+section .main .myInfo .myInfoText .text31{
+    font-size: 1.5rem;
+    color: #64faed;
+}
+
+section .main .myInfo .myInfoText #cvButton{
+	height: 3.125rem;
+	width: 11.56rem;
+	background-color: #048fb5;
+	border-style: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition:  0.2s linear;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	position: relative;
+}
+
+section .main .myInfo .myInfoText #cvButton a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+	font-family: 'Montserrat', sans-serif;
+	z-index: 1;
+}
+
+section .main .myInfo .myInfoText #cvButton::before{
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+    height: 0px;
+	width: 0px;
+	background: #ff2890;
+	border-radius: 5px;
+	transition: all 0.5s;
+}
+
+section .main .myInfo .myInfoText #cvButton:hover:before{
+	height: 100%;
+	width: 100%;
+}
+
+section .main .myInfo .myImage{
+	margin-top: 1.5rem;
+	overflow: hidden;
+	background: rgba(73, 139, 245,0.5);
+    border-radius: 100%;
+    border: 4px solid #ff2890;
+}
+
+section .main .myInfo .myImage img{
+	height: 22rem;
+	width: auto;
+	margin-top: -3.125rem;
+	transform: scale(1.2);
+}
+
+section .main .links{
+	margin-top: 1.5rem;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .main .links .myIcon{
+	margin: 1.5rem 3.125rem;
+	height: 3.75rem;
+	width: 3.75rem;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 100%;
+    position: relative;
+}
+
+section .main .links .myIcon a{
+	text-decoration: none;
+}
+
+section .main .links .myIcon a i{
+	color: #036c8a;
+	z-index: 1;
+	transition: all 0.5s;
+}
+
+section .main .links .myIcon .fa-github, .fa-facebook{
+	transform: scale(1);
+	font-size: 2.625rem;
+}
+
+section .main .links .myIcon .fa-twitter, .fa-linkedin{
+	transform: scale(1.2);
+	font-size: 1.875rem;
+}
+
+section .main .links .myIcon::before{
+	content: "";
+	position: absolute;
+	left: -2px;
+	bottom: -2px;
+    height: 0px;
+	width: 0px;
+	background: #222;	
+	border-radius:100%;
+	transition: all 0.5s;
+
+}
+
+section .main .links .myIcon:hover:before{
+	height: 100%;
+    width: 100%;
+    border:2px solid #ff2890;
+}
+
+section .main .links .myIcon:hover a i:before{
+	color: #04a6d4;
+}
+
+/*===========Media Queries for Responsive Design===========
+=========================================================*/
+@media screen and (max-width: 900px) {
+   :root{
+   font-size: 15px; 
+}
+
+section .main .myInfo .myImage img{
+	height: 22rem;
+}
+
+}
+
+@media screen and (max-width: 840px) {
+   :root{
+   font-size: 14px; 
+}
+}
+
+@media screen and (max-width: 800px) {
+   :root{
+   font-size: 12px; 
+}
+}
+
+@media screen and (max-width: 685px) {
+section .main .header .menus a{
+	margin: 0px 0px 0px 1rem;
+}
+
+section .main .links .myIcon{
+	margin: 1.25rem auto;
+}
+}
+
+@media screen and (max-width: 620px) {
+section .main .header .menuBar{
+    display: block;
+}
+
+section .main .header .menus{
+	display: none;
+}
+
+section .main .myInfo{
+	justify-content: space-between;
+}
+
+section .main .myInfo .myInfoText{
+	margin-top: 3.5rem;
+}
+
+section .main .myInfo .myImage{
+	margin-top: 1rem;
+}
+
+section .main .myInfo .myImage img{
+	height: 20rem;
+}
+
+section .main .links{
+	margin-top: 1.5rem;
+}
+}
+
+@media screen and (max-width: 530px) {
+section .main .myInfo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column-reverse;
+}
+
+section .main .myInfo .myInfoText{
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+section .main .myInfo .myImage{
+	margin-top: 0rem;
+	width: 15rem;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section .main .myInfo .myImage img{
+	height: 200px;
+	width:160px;
+}
+
+section .main .links{
+	margin-top: 1rem;
+}
+}
+
