@@ -155,6 +155,7 @@ section .main .header .menuBar #bar3{
 	width: 100px;
 	background: transparent;
 	border-style: none;
+	box-shadow: 1px 1px 5px #000,-1px -1px 2px #fff;
     margin: 10px 0px;
 }
 /*mobile responsive menu ends */
@@ -344,7 +345,7 @@ section .main .myInfo .myImage img{
 
 @media screen and (max-width: 685px) {
 section .main .header .menus a{
-	margin: 0px 0px 0px 1rem;
+	margin: 10px 0px 0px 1rem;
 }
 
 section .main .links .myIcon{
