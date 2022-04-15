@@ -1,3 +1,4 @@
+/*=========Basic required css==========*/
 *{
 	margin: 0px;
 	padding: 0px;
@@ -19,9 +20,10 @@ body{
    background: #000;
 }
 
-section{
+/*======================== CSS for Home Section Starts==========================
+==============================================================================*/
+.sectionHome{
 	height: 100vh;
-	width: 100vw;
 	background-image: url("bg.jpg");
 	background-size: cover;
 	background-position: center center;
@@ -37,6 +39,7 @@ section .main{
 	border: var(--bdr);
 }
 
+/*============== css for header/nav starts=================*/
 section .main .header{
 	height: 100px;
 	width: 100%;
@@ -103,7 +106,7 @@ section .main .header .menus a:hover::after{
 	transform: scale(1,1);
 }
 
-/*mobile responsive menu*/
+/*============= CSS for mobile responsive menu starts ======================*/
 section .main .header .menuBar{
     height: 35px;
     width: 35px;
@@ -155,10 +158,10 @@ section .main .header .menuBar #bar3{
 	width: 100px;
 	background: transparent;
 	border-style: none;
-	box-shadow: 1px 1px 3px #000,-1px -1px 1px #fff;
+	box-shadow: 1px 1px 5px #222,-1px -1px 2px #666;
     margin: 10px 0px;
 }
-/*mobile responsive menu ends */
+/*=============== CSS for mobile responsive menu ends ======================== */
 
 section .main .myInfo{
 	border: 1px solid #fff;
@@ -318,6 +321,80 @@ section .main .links .myIcon:hover a i:before{
 	color: #04a6d4;
 }
 
+/*======================== CSS for About Section Starts==========================
+==============================================================================*/
+.setionAbout{
+	padding:3.5rem 2.75rem 3.5rem 2.5rem;
+	background: #eee;
+}
+
+.setionAbout h1{
+   width: 100%;
+   text-align: center;
+   color: #ff2890;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 2rem;
+   text-decoration: underline;
+   text-decoration-style: wavy;
+}
+
+.setionAbout .about{
+   margin: 2.5rem 0rem 1.5rem 0rem;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.setionAbout .aboutContent{
+   width: 50%;
+   margin: 2rem 0rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+.setionAbout .icon{
+    height: 6.25rem;
+    width: 6.25rem;
+    background: rgba(4, 143, 181 , .6);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.setionAbout #icon3, #icon4{
+	padding-left: 0rem;
+}
+
+.setionAbout .icon img{
+    height: 5rem;
+    width: 5rem;
+}
+
+.setionAbout .aboutText{
+	text-align: justify-all;
+}
+
+.setionAbout .aboutText h2{
+   color: #048fb5;
+   font-size: 1.5rem;
+    margin-top: 10px;
+   text-decoration: underline;
+   text-decoration-style: solid;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.setionAbout .aboutText p{
+    color: #222;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+ }
+
 /*===========Media Queries for Responsive Design===========
 =========================================================*/
 @media screen and (max-width: 900px) {
@@ -380,6 +457,11 @@ section .main .myInfo .myImage img{
 
 section .main .links{
 	margin-top: 1.5rem;
+}
+
+/*aboutMe section */
+.setionAbout .aboutContent{
+   width: 100%;
 }
 }
 

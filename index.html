@@ -21,7 +21,7 @@
 
 </head>
 <body>
-      <section>
+      <section class="sectionHome" id="home"><!-- ============Home section starts=============== -->
       	<div class="main">
       		<div class="header">
       			<div class="portfolio_logo">
@@ -30,28 +30,28 @@
       			</div>
 
       			<div class="menus">
-      				<a href="">Home</a>
-      			    <a href="">About</a>
+      				<a href="#home">Home</a>
+      			    <a href="#about">About</a>
                     <a href="">Projects</a>
                     <a href="">Contact</a>
       			</div>
                
-               <!-- mobile responsive menu -->
+               <!--======== mobile responsive menu starts==========-->
                <div class="menuBar" onclick="menuControl();">
                     <div class="bar1" id="bar1"></div> <div class="bar2" id="bar2"></div> 
                     <div class="bar3" id="bar3"></div>
                </div>
 
-                <div id="mobileMenu">
+                <div id="mobileMenu" onclick="menuControl()">
                     <div class="menus" id="mobMenuList" class="portfolio_logo">
                         <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-portfolio-web-development-flaticons-flat-flat-icons.png"/>
-      			    	<a href="">Home</a>
-      			        <a href="">About</a>
+      			    	<a href="#home">Home</a>
+      			        <a href="#about">About</a>
                         <a href="">Projects</a>
                         <a href="">Contact</a>
       			    </div>
       		    </div>
-      		</div><!-- end of mobile responsive menu -->
+      		</div><!-- =======end of mobile responsive menu========== -->
 
       		<div class="myInfo">
       			<div class="myInfoText">
@@ -76,8 +76,65 @@
       			 <div class="myIcon"><a href="https://www.facebook.com/roshanbist.roshanbist.3" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
       		</div>
       	</div>
-      </section>
+      </section><!-- ============Home section ends=============== -->
       
+
+      <section class="setionAbout" id="about"> <!-- ============About section starts=============== -->
+          <h1>About ME</h1>
+          <div class="about">
+              <div class="aboutContent">
+                   <div class="icon">
+                       <img src="icons/education.png" alt="education icon">
+                   </div>
+
+                   <div class="aboutText">
+                       <h2>My Education:</h2>
+                       <p>Bsc.CSIT running at Siddhanath Science Campus, TU<br>
+                          +2 science was from Radiant Higher Secondry School.</p>
+                   </div>
+              </div>
+
+              <div class="aboutContent">
+                   <div class="icon">
+                       <img src="icons/experience.png" alt="experience icon">
+                   </div>
+
+                   <div class="aboutText">
+                       <h2>My Experience:</h2>
+                       <p>Done internship of 3 months as front end developer.<br>
+                          Completed some projcts during internship and later.</p>
+                   </div>
+              </div>
+
+              <div class="aboutContent">
+                   <div class="icon" id="icon3">
+                       <img src="icons/working.png" alt="expertise icon">
+                   </div>
+
+                   <div class="aboutText">
+                       <h2>My Expertise:</h2>
+                       <p>I can convert any psd or any other design to<br>
+                         clean, responsive and fast HTML, CSS, JS code.</p>
+                   </div>
+              </div>
+
+              <div class="aboutContent">
+                   <div class="icon" id="icon3">
+                       <img src="icons/brain.png" alt="my nature icon">
+                   </div>
+
+                   <div class="aboutText">
+                       <h2>My Nature:</h2>
+                       <p>I take some more time to complete any project <br>
+                          but try to give best project not just good one.</p>
+                   </div>
+              </div>
+          </div>
+      </section><!-- ============About section ends=============== -->
+      
+    
+     <!--  ====================================================================================
+      ========================= Javascript Part Starts ========================================== -->
       <script type="text/javascript">
             // JS DOM for well working of sidebar menu
             var x=0;   //denotes menu is hidden
