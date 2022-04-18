@@ -413,7 +413,7 @@ my projects and contact section) Starts=================================*/
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 2px 5px #ccc, -2px -2px 2px #eee;
+    box-shadow: 1px 1px 2px #ff2890, -1px -1px 2px #ff2890;
     padding: 1rem;
 }
 
