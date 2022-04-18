@@ -393,7 +393,7 @@ my projects and contact section) Starts=================================*/
     font-family: 'Montserrat', sans-serif;
  }
 
-/*================CSS for My Projests Section Starts===========*/
+/*================CSS for My Projects Section Starts===========*/
 .myProjects{
 	background: #ddd;
 	padding:3.5rem 2.75rem 3.5rem 2.5rem;
@@ -413,7 +413,7 @@ my projects and contact section) Starts=================================*/
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 2px 6px #888, -2px -2px 2px #fff;
+    box-shadow: 2px 2px 6px #aaa, -2px -2px 2px #fff;
     padding: 1rem;
 }
 
