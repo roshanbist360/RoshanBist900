@@ -288,14 +288,20 @@ section .main .myInfo .myImage img{
 	transition: all 0.5s;
 }
 
- .links .myIcon .fa-github, .fa-facebook{
-	transform: scale(1);
-	font-size: 2.625rem;
+ .links .myIcon .fa-github{
+	transform: scale(2.6);
 }
 
- .links .myIcon .fa-twitter, .fa-linkedin{
-	transform: scale(1.2);
-	font-size: 1.875rem;
+ .links .myIcon .fa-twitter{
+	transform: scale(2.3);
+}
+
+ .links .myIcon .fa-linkedin{
+	transform: scale(1.6);
+}
+
+.links .myIcon .fa-facebook{
+	transform: scale(1.3);
 }
 
  .links .myIcon::before{
