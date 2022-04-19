@@ -275,6 +275,7 @@ section .main .myInfo .myImage img{
     background: #ffffff;
     border-radius: 100%;
     position: relative;
+    stroke: #678975;
 }
 
  .links .myIcon a{
@@ -317,7 +318,7 @@ section .main .myInfo .myImage img{
 }
 
 .links .myIcon:hover a i:before{
-	color: #04a6d4;
+	color: #04a6dd;
 }
 
 /*======================== CSS for About Section (also some css for h1 h2 
