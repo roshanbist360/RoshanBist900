@@ -509,11 +509,13 @@ my projects and contact section) Starts=================================*/
 }
 
 #gthub, #fb{
+	font-size: 1.5rem;
    transform: scale(1.4);
    margin-bottom: 0.8rem;
 }
 
 #twitter, #lnkdn{
+	font-size: 1.5rem;
 	transform: scale(1.2);
     margin-bottom: 0.7rem;
 }
