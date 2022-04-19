@@ -288,19 +288,19 @@ section .main .myInfo .myImage img{
 	transition: all 0.5s;
 }
 
- .links .myIcon .fa-github{
+ .main .links .myIcon .fa-github{
 	transform: scale(2.6);
 }
 
- .links .myIcon .fa-twitter{
+.main  .links .myIcon .fa-twitter{
 	transform: scale(2.3);
 }
 
- .links .myIcon .fa-linkedin{
+.main  .links .myIcon .fa-linkedin{
 	transform: scale(1.6);
 }
 
-.links .myIcon .fa-facebook{
+.main .links .myIcon .fa-facebook{
 	transform: scale(1.3);
 }
 
