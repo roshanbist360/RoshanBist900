@@ -289,10 +289,12 @@ section .main .myInfo .myImage img{
 }
 
  .main .links .myIcon .fa-github, .fa-facebook{
+ 	font-size: 1rem;
 	transform: scale(2.6);
 }
 
 .main .links .myIcon .fa-twitter, .fa-linkedin{
+	font-size: 1rem;
 	transform: scale(2.25);
 }
 
