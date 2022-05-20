@@ -44,11 +44,17 @@
 
                 <div id="mobileMenu" onclick="menuControl()">
                     <div class="menus" id="mobMenuList" class="portfolio_logo">
-                        <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-portfolio-web-development-flaticons-flat-flat-icons.png"/>
-      			    	<a href="#home">Home</a>
-      			        <a href="#about">About</a>
-                        <a href="#myProjects">Projects</a>
-                        <a href="#contact">Contact</a>
+                        <div class="logo2">
+                            <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-portfolio-web-development-flaticons-flat-flat-icons.png"/>
+                        </div>
+    
+      			    	<a href="#home"><img src="https://img.icons8.com/material-outlined/24/ffffff/home--v2.png"/> Home</a>
+
+      			        <a href="#about"><img src="https://img.icons8.com/material-outlined/24/ffffff/about.png"/> About</a>
+
+                        <a href="#myProjects"><img src="https://img.icons8.com/material-outlined/24/ffffff/project.png"/> Projects</a>
+
+                        <a href="#contact"><img src="https://img.icons8.com/material-outlined/24/ffffff/contact-card.png"/> Contact</a>
       			    </div>
       		    </div>
       		</div><!-- =======end of mobile responsive menu========== -->
@@ -241,7 +247,7 @@
                 switch(x){
                     case 0:
                         document.getElementById('mobMenuList').style.opacity="1";
-                        document.getElementById('mobMenuList').style.height="280px";
+                        document.getElementById('mobMenuList').style.height="220px";
                         document.getElementById('mobMenuList').style.pointerEvents = "auto";
                         document.getElementById('bar1').style.transform = "rotate(45deg)";
                         document.getElementById('bar2').style.transform = "rotate(135deg)";
