@@ -147,7 +147,7 @@ body{
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: rgba(0, 0, 0, .95);
+	background:rgba(50, 50, 50, .9);
 	transition: all 0.5s;
  }
 
